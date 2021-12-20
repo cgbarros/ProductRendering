@@ -6,6 +6,8 @@ Most of the time something similar to what is showcased here happens when the we
 
 Typically this will appear as Soft 404 or Duplicated content (canonical) issues. That's because, since Googlebot can't see the real content, it will either think it is an error page (Soft 404, because it returns a 200 HTTP code) or it is the same content of all other product pages (hence it will choose one of them as the canonical).
 
+The website is live at https://productrendering.caiobarros.com
+
 ## This is also a Repl
 
 Check it at https://replit.com/@ElykSorab/ProductRendering
