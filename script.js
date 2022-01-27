@@ -1,12 +1,12 @@
 var pURL = document.location.href;
-// easier code with no regex for training
-// var pID = pURL.replace("https://productrendering.elyksorab.repl.co/", "");
-// pID = pID.replace(".html", "");
-var pID = pURL.match(/.*\/(.*)\.html/)[1]
+var pID = pURL.replace("https://productrendering.elyksorab.repl.co/", "");
+pID = pID.replace(".html", "");
+// solution in one line of code with regex
+// var pID = pURL.match(/.*\/(.*)\.html/)[1]
 console.log(pID);
 
 fetch('products.json', { method: "GET" })
-	.then(promisse => promisse.json())
+	.then(promise => promise.json())
 	.then(products => {
 		product = products[pID];
 		document.title = product["Name"];
